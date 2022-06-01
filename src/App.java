@@ -20,6 +20,18 @@ public class App {
 
     }
 
+    public void sortIntegers() {
+        ArrayList<Long> nums = new ArrayList<>();
+        while (scanner.hasNextLong()) {
+            nums.add(scanner.nextLong());
+        }
+        System.out.println("Total numbers: " + nums.size() + ".");
+        Collections.sort(nums);
+        System.out.print("Sorted data: ");
+        nums.forEach(number -> System.out.print(number + " "));
+
+    }
+
 
     public void computeLine() {
         ArrayList<String> lines = new ArrayList<>();
